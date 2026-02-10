@@ -1,0 +1,183 @@
+/* --------------------------------------------------
+   GLOBAL STYLING
+-------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #050B14, #0B1C2D);
+    color: white;
+}
+
+.landing-container {
+    width: 100%;
+    padding: 40px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* --------------------------------------------------
+   HERO SECTION
+-------------------------------------------------- */
+
+.hero {
+    flex: 1;
+    min-width: 320px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 72px;
+}
+
+.brand-title {
+    margin-left: 16px;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+}
+
+.headline {
+    margin-top: 32px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffffb3;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.btn {
+    padding: 18px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: none;
+}
+
+.primary {
+    background: white;
+    color: black;
+}
+
+.primary:hover {
+    opacity: 0.85;
+}
+
+.outlined {
+    background: transparent;
+    border: 1px solid #ffffff66;
+    color: white;
+}
+
+.outlined:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* --------------------------------------------------
+   MOCKUP SECTION
+-------------------------------------------------- */
+.mockups {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    margin-top: 40px;
+}
+
+.desktop-mockup {
+    width: 520px;
+    height: 320px;
+    background: #0E1A2B;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.phone-mockup {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 140px;
+    height: 260px;
+
+    background: black;
+    border-radius: 26px;
+    border: 1px solid #ffffff10;
+    overflow: hidden;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.mockup-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* --------------------------------------------------
+   RESPONSIVE (MOBILE BELOW 900px)
+-------------------------------------------------- */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-logo {
+        height: 56px;
+    }
+
+    .brand-title {
+        font-size: 32px;
+    }
+
+    .headline {
+        font-size: 34px;
+    }
+
+    .subtext {
+        font-size: 16px;
+    }
+
+    .desktop-mockup {
+        width: 320px;
+        height: 200px;
+    }
+
+    .phone-mockup {
+        width: 120px;
+        height: 220px;
+        right: -10px;
+        bottom: -10px;
+    }
+}
