@@ -3,62 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bharat Socials</title>
+  <title>Bharat Socials – Connecting Impact</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="landing-container">
+  <main class="landing">
+    <div class="container">
 
-  <div class="content-wrapper">
+      <div class="layout fade-in">
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-      <div class="brand">
-        <img src="assets/images/landing_icon.png" class="brand-logo" />
-        <h1 class="brand-title">Bharat Socials</h1>
-      </div>
+        <!-- ================= HERO ================= -->
+        <section class="hero">
 
-      <h2 class="headline">
-        Connecting Colleges,<br />
-        Communities & Impact Across India
-      </h2>
+          <div class="brand">
+            <img src="./assets/images/landing_icon.png" alt="Bharat Socials Logo">
+            <span>Bharat Socials</span>
+          </div>
 
-      <p class="subtext">
-        Bharat Socials is a unified digital platform to manage volunteers,<br />
-        college initiatives, social programs and real impact across India.
-      </p>
+          <h1>
+            Connecting Colleges,<br />
+            Communities & Impact<br />
+            <span>Across India</span>
+          </h1>
 
-      <div class="cta-buttons">
-        <button class="btn primary" onclick="openLink('https://app.bharatsocials.com')">
-          Open Web Platform
-        </button>
+          <p>
+            A unified digital ecosystem to manage volunteers, college initiatives,
+            social programs and measure real-world impact at scale.
+          </p>
 
-        <button class="btn outlined" onclick="openLink('https://play.google.com/store/apps/details?id=YOUR_APP_ID')">
-          Get Android App
-        </button>
+          <div class="cta">
+            <a href="#" class="btn primary">Open Web Platform</a>
+            <a href="#" class="btn outline">Android App</a>
+            <a href="#" class="btn outline">iOS App</a>
+          </div>
 
-        <button class="btn outlined" onclick="openLink('https://apps.apple.com/app/idYOUR_APP_ID')">
-          Get iOS App
-        </button>
+        </section>
+
+        <!-- ================= MOCKUPS ================= -->
+        <section class="mockup">
+
+          <div class="desktop-mockup glass">
+            <img src="./assets/images/desktop_icon.png" alt="Desktop UI">
+          </div>
+
+          <div class="mobile-mockup glass">
+            <img src="./assets/images/app_icon.jpg" alt="Mobile UI">
+          </div>
+
+        </section>
+
       </div>
     </div>
+  </main>
 
-    <!-- MOCKUP SECTION -->
-    <div class="mockups">
-      <div class="desktop-mockup">
-        <img src="assets/images/desktop_icon.png" class="mockup-img" />
-      </div>
-
-      <div class="phone-mockup">
-        <img src="assets/images/app_icon.jpg" class="mockup-img" />
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
